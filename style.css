@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css2?family:MuseoModerno:wght@500);
+
+body {
+    background-color: #2f2f2f;
+    color: saddlebrown;
+    font-family: 'MuseoModerno', cursive;
+    width: 100%
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 0 5px 0;
+    background-color: darkgoldenrod;
+    color:darkred;
+    margin-bottom: 0;
+}
+
+/* GAME SECTION */
+#game {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    background-color: beige;
+
+}
+
+/*/ ROUND DISPLAY */
+
+#round {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#countdownHidden {
+    visibility: hidden;
+}
+
+#countdown3Hidden {
+    visibility: hidden;
+}
+
+#countdown2Hidden {
+    visibility: hidden;
+}
+
+#countdown1Hidden {
+    visibility: hidden;
+}
+
+/*/ MAIN DISPLAY */
+
+#showDown {
+    width: 100%;
+    display: block;
+}
+
+#voidLeft {
+    width: 10%;
+    display: inline-block;
+}
+
+#player {
+    width: 15%;
+    display: inline-block;
+}
+
+.playersPhotos {
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+#playerWeapons {
+    width: 15%;
+    display: inline-block;
+}
+
+#playerWeapons img {
+    margin: 10px 25px 10px 25px;
+    height: 80px;
+    width: 80px;
+}
+
+#playerWeapons img:hover {
+    cursor: pointer;
+}
+
+.iconWeaponSelected {
+    margin: 10px 25px 10px 25px;
+    height: 80px;
+    width: 80px;
+    transform: scale(1.5,1.5);
+}
+
+.iconWeaponNotSelected {
+    margin: 10px 25px 10px 25px;
+    height: 80px;
+    width: 80px;
+    visibility:hidden ;
+}
+
+.flipIcon {
+    transform: scaleX(-1);
+}
+
+#result {
+    display: inline-block;
+    width: 20%;
+    font-size: 24px;
+}
+
+#opponentWeapons {
+    display: inline-block;
+    width: 15%;
+}
+
+#opponent {
+    display: inline-block;
+    width:15%;
+}
+
+#opponentWeapons img {
+    display: flex inline;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 25px 10px 25px;
+    height: 80px;
+    width: 80px;
+    border: none;
+}
+
+#voidRight {
+    display: inline-block;
+    width: 10%;
+}
+
+/*/ SCORE DISPLAY */
+
+#score {
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+
+#displayResult {
+    min-height: 40px;
+}
+
+#playerScore {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#computerScore {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* FOOTER DISPLAY */
+
+#footer {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 10px 0;
+}
+
+#instructions {
+    margin: 0 25px 0 50px;
+    letter-spacing: 0.1em;
+}
+
+#footer button {
+    margin: 0 25px 0 50px;
+    border: none;
+    background-color: saddlebrown;
+    border-radius: 25%;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    float: right;
+}
+
+#footer button:hover {
+    cursor: pointer;
+}

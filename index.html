@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>rock-paper-scissors!</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Rock Paper Scissors Showdown</h1>
+            <h3>Human vs. Computer</h3>
+        </div>
+
+        <div id="game">
+
+            <div id="round">
+                <p id="countdownHidden">Round <span id="roundDisplay">1</span>:<br>
+                <span id="countdown3Hidden">Rock</span><span id="countdown2Hidden"> - Paper</span><span id="countdown1Hidden"> - Scissors!</span></p>
+            </div>
+
+            <div id="showDown">
+
+                <div id="voidLeft"></div>
+
+                <div id="player">
+                   <img class="playersPhotos" src="human.png">
+                   <!-- try "old school style" <span id="rockOldStyle">&#127792 &#127838<span>&#128195</span><span>&#9988</span> -->
+                </div>
+                
+                <div id="playerWeapons">
+                    <img class="iconWeaponNotSelected" id="rockPlayer" src="rock.png" onclick="rockPlay()"><br><img class="iconWeaponNotSelected" id="paperPlayer" src="paper.png" onclick="paperPlay()"><br><img class="iconWeapon flipIcon" id="scissorsPlayer" src="oktogo.png" onclick="startGame()">
+                </div>
+
+                <div id="result">
+                    <p id="displayResult"></p>
+                </div>
+
+                <div id="opponentWeapons">
+                    <img class="iconWeapon" id="iconWeaponOpponent" src="oktogo.png">    
+                </div>
+                
+                <div id="opponent">
+                
+                   <img class="playersPhotos" src="robot-random.png">
+                   
+              </div>
+
+              <div id="voidRight"></div>
+            </div>
+
+            <div class="score">
+                <h2 id="displayScore">The score: You: <span id="playerScore">0</span> - Computer: <span id="computerScore">0</span></h2>
+            </div>
+
+        </div>
+        
+        <div id="footer">
+            <div>
+                <div id="instructions"><span>Click on the human hand to get started, then choose your weapon!</span></div>
+                <div id="rematch"><button onclick="rematch()">Rematch</button></div>
+            </div>   
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
